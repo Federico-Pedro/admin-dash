@@ -1,2 +1,2 @@
-# admin-dash
-Last assignment of "intermidiate html and css" 
+# Admin-Dashboard
+Final project of "Intermediate HTML and CSS" for The Odin Project
