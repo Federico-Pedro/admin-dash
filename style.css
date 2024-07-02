@@ -2,7 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-	/*border: 1px solid black;*/
+	
+	border: 1px solid black; 
+}
+
+*:focus {
+    outline: none;
 }
 
 .main-container {
@@ -31,7 +36,6 @@
 .img-icon{
 	height: 2.5rem;
 	width: auto;
-	color: red;
 	vertical-align: middle;
 	padding-right: 15px;
 	filter: invert(1);
@@ -59,27 +63,35 @@ ul{
 	width: auto;
 }
 
+
+
+/*right side*/
+
+
 .content-container{
 	display: grid;
-	grid-template-rows: 1fr 4fr;
+	grid-template-rows: 0.25fr 1fr;
+	
 }
 
 .nav-bar{
-	/*alinear la barra hacia arriba*/
+	display: grid;
+	grid-template-rows: 0.5fr 1fr;
 }
 
 .search-bar{
-	
-	
-	background-color: red;
+		
+	background-color: rgb(255, 255, 255);
 	display: flex;
 	align-items: center;
-	
+	justify-content: space-around;
 	
 }
 
 .search-icon{
-	height: 1.5rem;
+	height: 2rem;
+	margin: 15px;
+	margin-right: 25px;
 	
 	
 }
@@ -88,11 +100,83 @@ ul{
 		width: 50%;
 		height: 1.5rem;
 		border-radius: 50px;
-		background-color: #EDEDED;
-		
+		background-color: #e9e9e9;
+		margin-right: auto;
+		border: none;
+		padding: 10px;
+}
+
+.search:focus {
+	border: 1px solid rgb(150, 150, 150);
+}
+
+.search:hover{
+	border: 1px solid rgb(150, 150, 150);
 }
 
 .logo{
 	height: 3rem;
 	width: auto;
+	margin: 20px;
+	margin-left: 35px;
 }
+
+.second-title{
+	color: rgb(46, 46, 46);
+	font-size: 1.3rem;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	margin: 15px;
+}
+
+.main-title{
+	display:flex;
+	align-items: center;
+	
+}
+
+.main-title .logo{
+	height: 5rem;
+	width: auto;;
+}
+.main-title h1 {
+	padding: 20px;
+	color: rgb(46, 46, 46);
+	font-size: 2rem;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	margin-right: auto;
+}
+
+.button{
+	width: 120px;
+	height: 3rem;
+	background-color:#0096E0;
+	color: rgb(255, 255, 255);
+	border-radius: 50px;
+	border: none;
+	margin: 25px;
+	font-size: 1.2rem;
+	font-weight: bold;
+
+}
+
+/*content and cards*/
+
+.content{
+	background-color: rgb(204, 204, 204);
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+}
+ .card-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	padding: 20px;
+	
+ }
+
+ .card{
+	border: 1px solid #000000;
+	border-radius: 20px;
+	height: 300px;
+	width: 1fr;
+ }
